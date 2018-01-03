@@ -1,0 +1,9 @@
+@baseFontSize: 75;
+@rem: @baseFontSize * 1rem;
+
+.dpr-font(@fontSize) {
+  font-size: @fontSize;
+  [data-dpr="2"] & {
+    font-size: @fontSize * 2;
+  }
+}
